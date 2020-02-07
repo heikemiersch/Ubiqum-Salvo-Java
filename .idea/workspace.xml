@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b55610e-038d-4a1b-831d-341058ded85a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/salvo" />
+  </component>
+  <component name="ProjectId" id="1UYgc7bhL8Su9aZtq6Ut4Ahqjfy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Application.BattleshipApplication">
+    <configuration name="BattleshipApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_231" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.codeoftheweb.salvo.BattleshipApplication" />
+      <module name="java-battleship" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_231" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.codeoftheweb.salvo.BattleshipApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/heike/Documents/java-battleship/salvo/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/salvo/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.BattleshipApplication" />
+      <item itemvalue="Gradle.C:/Users/heike/Documents/java-battleship/salvo/build.gradle" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.C:/Users/heike/Documents/java-battleship/salvo/build.gradle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\heike\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b55610e-038d-4a1b-831d-341058ded85a" name="Default Changelist" comment="" />
+      <created>1575539018036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575539018036</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="170" y="42" width="1092" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575547252803">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="170" y="42" width="1092" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575547252803" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1575540102509">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1575540102509" />
+    <state x="628" y="264" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575539641679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="628" y="264" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1575539641679" />
+    <state x="360" y="30" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1575539554116">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="360" y="30" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1366.728@0.0.1366.728" timestamp="1575539554116" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1581079502116">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581079502116" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575547354252" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1575547355762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575547355762" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1575547355762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575547355762" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1575547355762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575547355762" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1575547355762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575547355762" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1581079700236">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1691" y="-475" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@-1920.-475.1920.1040" timestamp="1581079191625" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581079700236" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575547338422" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1581079320569">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581079320569" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1575539982511">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1575539982511" />
+  </component>
+</project>
