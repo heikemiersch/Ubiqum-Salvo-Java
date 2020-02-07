@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/salvo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UYgc7bhL8Su9aZtq6Ut4Ahqjfy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -95,6 +95,11 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/salvo" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="170" y="42" width="1092" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575547252803">
       <screen x="0" y="0" width="1366" height="728" />
@@ -133,16 +138,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575547355762" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1581079700236">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1581080272751">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1691" y="-475" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@-1920.-475.1920.1040" timestamp="1581079191625" />
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581079700236" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581080272751" />
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575547338422" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1581079320569">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1581080258307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581079320569" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581080258307" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1575539982511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
