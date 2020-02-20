@@ -33,7 +33,7 @@ public class Salvo {
     }
 
     public void setSalvoLocation(List<String> salvoLocation) {
-        salvoLocation = salvoLocation;
+        this.salvoLocation = salvoLocation;
     }
 
     public GamePlayer getGamePlayer() {
@@ -54,5 +54,15 @@ public class Salvo {
 
     public void setGamePlayer(GamePlayer gamePlayer) {
         this.gamePlayer = gamePlayer;
+    }
+
+    @Override
+    public String toString() {
+        return "Salvo{" +
+                "id=" + id +
+                ", turn=" + turn +
+                ", gamePlayer=" + gamePlayer +
+                ", salvoLocation=" + salvoLocation +
+                '}';
     }
 }

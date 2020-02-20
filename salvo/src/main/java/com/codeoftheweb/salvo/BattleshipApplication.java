@@ -77,30 +77,30 @@ public class BattleshipApplication extends SpringBootServletInitializer{
 			GamePlayer gamePlayer6 = new GamePlayer(grete, game3);
 
 			// ShipLocations
-			List<String> shipLocList1 = Arrays.asList("A1","A2","A3");
+			/*List<String> shipLocList1 = Arrays.asList("A1","A2","A3");
 			List<String> shipLocList2 = Arrays.asList("B1","B2","B3");
 			List<String> shipLocList3 = Arrays.asList("F2","F3");
-			List<String> shipLocList4 = Arrays.asList("D5","D6");
-			List<String> shipLocList5 = Arrays.asList("E10","F10","G10");
-			List<String> shipLocList6 = Arrays.asList("H7","H8");
+			List<String> shipLocList4 = Arrays.asList("D5","D6");*/
+			List<String> shipLocList5 = Arrays.asList("49","59","69");
+			List<String> shipLocList6 = Arrays.asList("77","78");
 
 			// ships
-			Ship ship1 = new Ship("Destroyer", shipLocList1);
+			/*Ship ship1 = new Ship("Destroyer", shipLocList1);
 			Ship ship2 = new Ship("Submarine", shipLocList2);
 			Ship ship3 = new Ship("Carrier", shipLocList3);
-			Ship ship4 = new Ship("Carrier", shipLocList4);
+			Ship ship4 = new Ship("Carrier", shipLocList4);*/
 			Ship ship5 = new Ship("Destroyer", shipLocList5);
 			Ship ship6 = new Ship("Carrier", shipLocList6);
 
 			// add ships to gamePlayers
-			gamePlayer1.addShip(ship1);
+			/*gamePlayer1.addShip(ship1);
 			gamePlayer2.addShip(ship2);
 			gamePlayer1.addShip(ship3);
-			gamePlayer2.addShip(ship4);
+			gamePlayer2.addShip(ship4);*/
 			gamePlayer3.addShip(ship5);
 			gamePlayer3.addShip(ship6);
 
-			List<String> salvoLocList1 = Arrays.asList("B2","B3","B4");
+			/*List<String> salvoLocList1 = Arrays.asList("B2","B3","B4");
 			List<String> salvoLocList2 = Arrays.asList("B2","B3","B4");
 			List<String> salvoLocList3 = Arrays.asList("F5","F6", "F7");
 			List<String> salvoLocList4 = Arrays.asList("D5","D6", "D7");
@@ -113,15 +113,15 @@ public class BattleshipApplication extends SpringBootServletInitializer{
 			Salvo salvo3 = new Salvo (2, salvoLocList3);
 			Salvo salvo4 = new Salvo (2, salvoLocList4);
 			Salvo salvo5 = new Salvo (1, salvoLocList5);
-			Salvo salvo6 = new Salvo (1, salvoLocList6);
+			Salvo salvo6 = new Salvo (1, salvoLocList6);*/
 
 			// add salvoes to gamePlayers
-			gamePlayer1.addSalvo(salvo1);
+			/*gamePlayer1.addSalvo(salvo1);
 			gamePlayer2.addSalvo(salvo2);
 			gamePlayer1.addSalvo(salvo3);
 			gamePlayer2.addSalvo(salvo4);
 			gamePlayer3.addSalvo(salvo5);
-			gamePlayer3.addSalvo(salvo6);
+			gamePlayer3.addSalvo(salvo6);*/
 
 
 
@@ -176,15 +176,17 @@ public class BattleshipApplication extends SpringBootServletInitializer{
 			repositoryGamePlayer.save(gamePlayer5);
 			repositoryGamePlayer.save(gamePlayer6);
 
-			shipRepository.save(ship1);
+			/*shipRepository.save(ship1);
 			shipRepository.save(ship2);
 			shipRepository.save(ship3);
-			shipRepository.save(ship4);
+			shipRepository.save(ship4);*/
+			shipRepository.save(ship5);
+			shipRepository.save(ship6);
 
-			salvoRepository.save(salvo1);
+			/*salvoRepository.save(salvo1);
 			salvoRepository.save(salvo2);
 			salvoRepository.save(salvo3);
-			salvoRepository.save(salvo4);
+			salvoRepository.save(salvo4);*/
 
 			System.out.println("I am ready.");
 
@@ -206,10 +208,6 @@ public class BattleshipApplication extends SpringBootServletInitializer{
 		bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
 		return bean;
 	}
-
-
-
-
 
 	@CrossOrigin(origins = "http://localhost:8081/")
 	@Configuration

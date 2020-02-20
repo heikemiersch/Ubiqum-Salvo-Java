@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b55610e-038d-4a1b-831d-341058ded85a" name="Default Changelist" comment="" />
+    <list default="true" id="3b55610e-038d-4a1b-831d-341058ded85a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +13,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UYgc7bhL8Su9aZtq6Ut4Ahqjfy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -19,11 +20,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/salvo" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Application.BattleshipApplication">
     <configuration name="BattleshipApplication" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -83,7 +84,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\heike\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -94,11 +95,6 @@
       <updated>1575539018036</updated>
     </task>
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/salvo" />
-    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="170" y="42" width="1092" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575547252803">
@@ -117,10 +113,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="360" y="30" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1366.728@0.0.1366.728" timestamp="1575539554116" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1581079502116">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1575547354252">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581079502116" />
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575547354252" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1575547355762">
       <screen x="0" y="0" width="1366" height="728" />
@@ -138,16 +133,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575547355762" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1581080272751">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1575547338422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1691" y="-475" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@-1920.-475.1920.1040" timestamp="1581079191625" />
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581080272751" />
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575547338422" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1581080258307">
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1581080565570">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581080258307" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.-475.1920.1040@0.0.1366.728" timestamp="1581080565570" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1575539982511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
