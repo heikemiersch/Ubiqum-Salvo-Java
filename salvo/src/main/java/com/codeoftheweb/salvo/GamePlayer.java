@@ -24,6 +24,8 @@ public class GamePlayer {
     @JoinColumn(name = "game_id")
     private Game game;
 
+    private int turn;
+
     public Set<Salvo> getSalvoes() {
         return salvoes;
     }
@@ -43,6 +45,7 @@ public class GamePlayer {
     public GamePlayer(Player player, Game game) {
         this.player = player;
         this.game = game;
+        this.turn = 0;
     }
 
     public long getGamePlayer_id() {
@@ -106,4 +109,12 @@ public class GamePlayer {
             return null;
         }
     }
+
+    public void incrementTurn() {
+        this.turn++;
+    }
+
+    public int getTurn(){
+return this.turn;
+}
 }

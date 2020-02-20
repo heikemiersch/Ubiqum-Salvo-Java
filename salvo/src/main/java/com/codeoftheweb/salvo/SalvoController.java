@@ -98,8 +98,7 @@ public class SalvoController {
         GameViewJson.put("salvoes", salvoesInfo(gamePlayer));
         GameViewJson.put("hits", createHits(gamePlayer));
         GameViewJson.put("scores", gamePlayer.getPlayer().getCurrentScore(gamePlayer.getGame()));
-
-        // opponent.getShips() compare these to salvo.getSalvoLocations()
+        GameViewJson.put("turn", gamePlayer.getTurn());
 
         game_info.add(GameViewJson);
         return game_info;
@@ -113,20 +112,19 @@ public class SalvoController {
            ship.getShipLocation().forEach(oneLocation -> {
                 shipLoc_info.add(oneLocation);
             });
-
-            System.out.println(shipLoc_info);
+           /* System.out.println(shipLoc_info);*/
         });
         gameplayer.getSalvoes().forEach( salvo -> {
-            System.out.println("salvo" + salvo);
+           /* System.out.println("salvo" + salvo);*/
             salvo.getSalvoLocation().forEach(salvoLoc -> {
-                    System.out.println("salvo location" + salvoLoc);
+                /*    System.out.println("salvo location" + salvoLoc);*/
                     salvoLoc_info.add(salvoLoc);
                 });
         });
-        System.out.println("salvo location" + salvoLoc_info);
+        /*System.out.println("salvo location" + salvoLoc_info);*/
         salvoLoc_info.forEach(oneLocation -> {
-            System.out.println("one salvo location" + oneLocation);
-            System.out.println("hits" + shipLoc_info.contains(oneLocation));
+        /*    System.out.println("one salvo location" + oneLocation);
+            System.out.println("hits" + shipLoc_info.contains(oneLocation));*/
             if(shipLoc_info.contains(oneLocation)) {
                 System.out.println("hit!");
                 hits_info.add(oneLocation);
@@ -136,6 +134,32 @@ public class SalvoController {
         return hits_info;
     }
 
+ /*   Boolean turnBoolean(GamePlayer gamePlayer) {
+        if (gamePlayer.getOpponent(gamePlayer) != null) {
+        Boolean isNewTurn = null;
+        ArrayList<Integer> mySalvoTurns = new ArrayList<>();
+        gamePlayer.getSalvoes().forEach(salvo -> {
+            mySalvoTurns.add(salvo.getTurn());
+        });
+        ArrayList<Integer> opponentSalvoTurns = new ArrayList<>();
+        gamePlayer.getOpponent(gamePlayer).getSalvoes().forEach(salvo -> {
+            opponentSalvoTurns.add(salvo.getTurn());
+        });
+        Integer myLastTurn = mySalvoTurns.get(mySalvoTurns.size() - 1);
+        Integer opponentLastTurn = opponentSalvoTurns.get(opponentSalvoTurns.size() - 1);
+        if (myLastTurn > 0 && opponentLastTurn > 0) {
+
+        if(myLastTurn == opponentLastTurn || myLastTurn == opponentLastTurn -1) {
+            isNewTurn = true;
+        } else {
+            isNewTurn = false;
+        }}
+        return isNewTurn;
+    }
+    else {
+        return null;
+        }
+    }*/
 
    List<Object> shipsInfo(GamePlayer gameplayer) {
         List<Object> ship_info = new ArrayList<>();
@@ -187,7 +211,7 @@ public class SalvoController {
     @RequestMapping(path = "/register", method = RequestMethod.POST)
     public ResponseEntity<Object> register(
             @RequestParam String userName, @RequestParam String password, @RequestParam String missionstatement) {
-        System.out.println("pw: " +password + " user: "+ userName);
+        /*System.out.println("pw: " +password + " user: "+ userName);*/
         if (userName.isEmpty() ||  password.isEmpty() || missionstatement.isEmpty()) {
             return new ResponseEntity<>("something's missing", HttpStatus.FORBIDDEN);
         }
@@ -196,7 +220,7 @@ public class SalvoController {
             return new ResponseEntity<>("name already in use", HttpStatus.CONFLICT);
         }
         Player newPlayer= playerRepository.save(new Player(userName, passwordEncoder2().encode(password), missionstatement));
-        System.out.println("new player "+ newPlayer);
+    /*    System.out.println("new player "+ newPlayer);*/
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
@@ -226,8 +250,8 @@ public class SalvoController {
     @RequestMapping(path = "/games/join/{gameId}", method = RequestMethod.POST)
     public ResponseEntity<Object> joinGame( @PathVariable Long gameId, Authentication authentication) {
 
-        System.out.println("gameId: " + gameId);
-        System.out.println("authentication.getName(): " + authentication.getName());
+      /*  System.out.println("gameId: " + gameId);
+        System.out.println("authentication.getName(): " + authentication.getName());*/
         Player loggedPlayer = playerRepository.findByUserName(authentication.getName());
 
         Optional<Game> currentGame = gameRepository.findById(gameId);
@@ -252,7 +276,7 @@ public class SalvoController {
     @CrossOrigin(origins = "http://localhost:8081/")
     @RequestMapping(path = "/games/players/{gameId}/ships", method = RequestMethod.POST)
     public ResponseEntity<Object> addShips(@PathVariable long gameId, @RequestBody List<Ship> ships, Authentication authentication) {
-        System.out.println("ships: " + ships);
+        System.out.println("ships: " + ships.toString());
         Player currentUser = playerRepository.findByUserName(authentication.getName());
         GamePlayer gamePlayer = repositoryGamePlayer.findById(gameId).orElse(null);
         if (authentication.getName() == null) {
@@ -283,10 +307,9 @@ public class SalvoController {
 
 
         Player currentUser = playerRepository.findByUserName(authentication.getName());
-       System.out.println("currentUser.getUserName(): " + currentUser.getUserName());
+      /* System.out.println("currentUser.getUserName(): " + currentUser.getUserName());*/
         GamePlayer gamePlayer = repositoryGamePlayer.findById(gamePlayerId).orElse(null);
-        //GamePlayer opponent = gamePlayer.getOpponent(gamePlayer);
-       System.out.println("gamePlayer.getPlayer().getUserName(): " + gamePlayer.getPlayer().getUserName());
+  /*     System.out.println("gamePlayer.getPlayer().getUserName(): " + gamePlayer.getPlayer().getUserName());*/
         if (authentication.getName() == null) {
             return new ResponseEntity<>("there is no current user logged in", HttpStatus.UNAUTHORIZED);
         }
@@ -301,10 +324,13 @@ public class SalvoController {
         }
         else {
             gamePlayer.addSalvo(salvo);
+            gamePlayer.incrementTurn();
             repositoryGamePlayer.save(gamePlayer);
             salvoRepository.save(salvo);
-            System.out.println("salvo: " + salvo);
-            System.out.println("salvo.getSalvoLocation(): " + salvo.getSalvoLocation());
+
+
+           /* System.out.println("salvo: " + salvo);
+            System.out.println("salvo.getSalvoLocation(): " + salvo.getSalvoLocation());*/
             return new ResponseEntity<>(HttpStatus.CREATED);
         }
         }
