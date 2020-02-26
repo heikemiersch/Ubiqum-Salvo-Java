@@ -73,6 +73,7 @@ public class Game {
         gamePlayers.add(gamePlayer);
     }
 
+
    /* public void addScore(Score score) {
         score.setGame(this);
         scores.add(score);

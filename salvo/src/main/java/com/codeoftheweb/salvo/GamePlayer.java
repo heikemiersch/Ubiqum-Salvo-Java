@@ -1,12 +1,10 @@
 package com.codeoftheweb.salvo;
 
+import com.sun.javafx.scene.text.TextLayout;
 import net.minidev.json.annotate.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 public class GamePlayer {
@@ -37,15 +35,16 @@ public class GamePlayer {
     @OneToMany(mappedBy = "gamePlayer", fetch = FetchType.EAGER)
     Set<Ship> ships = new HashSet<>();
 
-    @OneToMany(mappedBy="gamePlayer", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy = "gamePlayer", fetch = FetchType.EAGER)
     private Set<Salvo> salvoes = new HashSet<>();
 
-    public GamePlayer() {}
+    public GamePlayer() {
+    }
 
     public GamePlayer(Player player, Game game) {
         this.player = player;
         this.game = game;
-        this.turn = 0;
+        this.turn = 1;
     }
 
     public long getGamePlayer_id() {
@@ -74,33 +73,29 @@ public class GamePlayer {
         this.game = game;
     }
 
-    public void addShip(Ship ship){
-        System.out.println(ship);
+    public void addShip(Ship ship) {
+        // System.out.println(ship);
         ship.setGamePlayer(this);
         this.ships.add(ship);
-        // return a set of ships
     }
 
     public Set<Ship> getShips() {
         return ships;
     }
 
-    //gamePlayer.getSalvoes() should return a list of salvo objects,
-    //describing the salvo the gamePlayer has fired
-
-    public void addSalvo(Salvo salvo){
+    public void addSalvo(Salvo salvo) {
         System.out.println(salvo);
         salvo.setGamePlayer(this);
         this.salvoes.add(salvo);
     }
 
-    public GamePlayer getOpponent(GamePlayer gamePlayer){
+    public GamePlayer getOpponent(GamePlayer gamePlayer) {
         Map<String, GamePlayer> oppo = new HashMap<>();
-        if(gamePlayer.getGame().getGamePlayers().size() == 2){
+        if (gamePlayer.getGame().getGamePlayers().size() == 2) {
             gamePlayer.getGame().getGamePlayers()
                     .stream()
                     .forEach(gp -> {
-                        if(gp.getGamePlayer_id() != gamePlayer.getGamePlayer_id()){
+                        if (gp.getGamePlayer_id() != gamePlayer.getGamePlayer_id()) {
                             oppo.put("opponent", gp);
                         }
                     });
@@ -114,7 +109,23 @@ public class GamePlayer {
         this.turn++;
     }
 
-    public int getTurn(){
-return this.turn;
-}
-}
+    public int getTurn() {
+        return this.turn;
+    }
+
+    Boolean canIShoot(GamePlayer gamePlayer) {
+        Boolean isNewTurn = null;
+    if(gamePlayer.getTurn() <= gamePlayer.getOpponent(gamePlayer).getTurn()) {
+        isNewTurn = true;
+    } else {
+        isNewTurn = false;
+    }
+    return isNewTurn;
+    }
+
+    }
+
+   /*  also later if (hits_info == 17) {
+     gameover == true;
+     }*/
+
